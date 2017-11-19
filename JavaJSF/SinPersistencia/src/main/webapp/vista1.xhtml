@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+<h:body>
+<h2>App de saludo</h2>
+<h3>Saludando</h3>
+<h:form id="form1">
+<p>Tu nombre:
+<p:inputText value="#{obj.nombre}"/>
+</p>
+<p>
+<h:commandButton value="Go" action="#{obj.doSomeThing}" />
+</p>
+<h:outputText value="#{obj.respuesta}" />
+</h:form>
+</h:body>
+</html>
